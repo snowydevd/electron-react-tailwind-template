@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "./components/ui/button.jsx";
+import Counter from "./components/ux/counter.jsx";
+import ProductList from "./components/ux/productLists.jsx";
 
 export default function App() {
   return (
@@ -9,6 +11,15 @@ export default function App() {
         <button className="bg-black text-white font-semibold text-lg">
           Login
         </button>
+      </div>
+
+      <div>
+        <Counter />
+      </div>
+
+      <div>
+        <span>API DE LISTA DE PRODUCTOS FALSOS:</span>
+        <ProductList />
       </div>
     </div>
   );
